@@ -16,7 +16,7 @@ def get_llm_response(image_data: bytes) -> str:
     buf.seek(0)
     image_bytes = buf.read()
 
-    # Call Gemini API for multimodal response (captioning example)
+    # Call Gemini API
     response = gemini_client.models.generate_content(
         model="gemini-1.5-flash",
         contents=[
